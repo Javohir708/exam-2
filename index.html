@@ -5,11 +5,366 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <img src="assets/logo.svg" alt="Logo image">
+                </div>
+                <div class="navbar__links">
+                    <div class="navbar__item navbar__travelers">
+                        <span>
+                            Travelers
+                            <img src="./assets/arrow.svg" alt="arrow image">
+                        </span>
+                    </div>
+                    <ul class="navbar__collection">
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">Support</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">
+                                <img src="./assets/language.svg" alt="language image">
+                                Language
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">
+                                <button>List your property</button>
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">
+                                <img src="./assets/Notification.svg" alt="Notification image">
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">
+                                <img src="./assets/avatar.png" alt="avatar image">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar__menu">
+                    <i class="fa-solid fa-bars" style="color: #393a3d;"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
     
+    <main>
+        <section class="hero">
+            <div class="container-lg">
+                <div class="hero__image">
+                    <div class="hero__content">
+                        <h2>Car rentals</h2>
+                        <p>Find and book a great experience.</p>
+                        <button>Start your search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="destination">
+            <div class="container">
+                <div class="destination__wrapper">
+                    <div class="destination__info">
+                        <h2>Popular destinations</h2>
+                        <p>for car rentals</p>
+                    </div>
+                    <div class="destination__arrows">
+                        <button class="arrow-left"><img src="./assets/arrow_left.svg" alt="arrow image"></button>
+                        <button class="arrow-right"><img src="./assets/arrow_right.svg" alt="arrow image"></button>
+                    </div>
+                </div>
+                <div class="locations__wrapper">
+                    <div class="locations__card">
+                        <img src="./assets/locations1.png" alt="Paris image">
+                        <h3>Paris</h3>
+                        <p>Car rentals in 86 pickup locations</p>
+                        <strong>from $540 per day</strong>
+                    </div>
+                    <div class="locations__card">
+                        <img src="./assets/locations2.png" alt="Paris image">
+                        <h3>London</h3>
+                        <p>Car rentals in 86 pickup locations</p>
+                        <strong>from $540 per day</strong>
+                    </div>
+                    <div class="locations__card">
+                        <img src="./assets/locations3.png" alt="Paris image">
+                        <h3>Ams</h3>
+                        <p>Car rentals in 86 pickup locations</p>
+                        <strong>from $540 per day</strong>
+                    </div>
+                    <div class="locations__card">
+                        <img src="./assets/locations4.png" alt="Paris image">
+                        <h3>Milan</h3>
+                        <p>Car rentals in 86 pickup locations</p>
+                        <strong>from $540 per day</strong>
+                    </div>
+                </div>
+                <button class="all__button">Show more ></button>
+            </div>
+        </section>
+
+        <section class="rent">
+            <div class="container">
+                <div class="rent__wrapper">
+                    <div class="rent__card">
+                        <div class="rent__info">
+                            <strong>supercharge your planning powers</strong>
+                            <h2>Rent a car in minutes with Fleet</h2>
+                            <p>Stacks is a production-ready library of stackable content blocks built in React Native.</p>
+                            <form action="">
+                                <input class="rent__input" type="text" placeholder="Enter your phone number">
+                                <button class="rent__btn" type="submit"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+                            </form>
+                        </div>
+                        <div class="rent__image">
+                            <img src="assets/rent__image.svg" alt="rent a car image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="explore">
+            <div class="container">
+                <div class="destination__wrapper"> <!-- destination qismida qilingan tayyor hammasi -->
+                    <div class="destination__info">
+                        <h2>Explore nearby</h2>
+                        <p>for car rentals</p>
+                    </div>
+                    <div class="destination__arrows">
+                        <button class="arrow-left"><img src="./assets/arrow_left.svg" alt="arrow image"></button>
+                        <button class="arrow-right"><img src="./assets/arrow_right.svg" alt="arrow image"></button>
+                    </div>
+                </div>
+                
+                <div class="explore__wrapper">
+                    <div class="locations__card">  <!-- location qismida qilingan tayyor hammasi -->
+                        <img src="./assets/locations1.png" alt="Paris image">
+                        <h3>Paris</h3>
+                        <p>Car rentals in 86 pickup locations</p>
+                        <strong>from $540 per day</strong>
+                    </div>
+                
+                    <div class="locations__card"> 
+                        <img src="./assets/locations2.png" alt="Paris image">
+                        <h3>Paris</h3>
+                        <p>Car rentals in 86 pickup locations</p>
+                        <strong>from $540 per day</strong>
+                    </div>
+
+                    <div class="locations__card">
+                        <img src="./assets/locations3.png" alt="Paris image">
+                        <h3>Paris</h3>
+                        <p>Car rentals in 86 pickup locations</p>
+                        <strong>from $540 per day</strong>
+                    </div>
+
+                    <div class="locations__card">
+                        <img src="./assets/locations3.png" alt="Paris image">
+                        <h3>Paris</h3>
+                        <p>Car rentals in 86 pickup locations</p>
+                        <strong>from $540 per day</strong>
+                    </div>
+
+                    <div class="locations__card">
+                        <img src="./assets/locations4.png" alt="Paris image">
+                        <h3>Paris</h3>
+                        <p>Car rentals in 86 pickup locations</p>
+                        <strong>from $540 per day</strong>
+                    </div>
+
+                    <div class="locations__card">
+                        <img src="./assets/locations1.png" alt="Paris image">
+                        <h3>Paris</h3>
+                        <p>Car rentals in 86 pickup locations</p>
+                        <strong>from $540 per day</strong>
+                    </div>
+                    <div class="locations__card">
+                        <img src="./assets/locations3.png" alt="Paris image">
+                        <h3>Paris</h3>
+                        <p>Car rentals in 86 pickup locations</p>
+                        <strong>from $540 per day</strong>
+                    </div>
+
+                    <div class="locations__card">
+                        <img src="./assets/locations4.png" alt="Paris image">
+                        <h3>Paris</h3>
+                        <p>Car rentals in 86 pickup locations</p>
+                        <strong>from $540 per day</strong>
+                    </div>
+
+                    <div class="locations__card">
+                        <img src="./assets/locations1.png" alt="Paris image">
+                        <h3>Paris</h3>
+                        <p>Car rentals in 86 pickup locations</p>
+                        <strong>from $540 per day</strong>
+                    </div>
+                </div>
+                <button class="all__button">Show more ></button>
+            </div>
+        </section>
+        
+        <section class="services">
+            <div class="container">
+                <div class="services__info">
+                    <strong>A creative agency that lead and inspire</strong>
+                    <h2>Amazing Services</h2>
+                    <button>Contact Us</button>
+                </div>
+                <div class="services__wrapper">
+                    <div class="services__card">
+                        <img src="./assets/smile__image_services.svg" alt="smile image">
+                        <h4>1+M reviewers</h4>
+                        <p>We realize ideas from simple to complex, everything becomes easy to use and reach the most potential customers.</p>
+                    </div>
+                    <div class="services__card">
+                        <img src="./assets/Light_services.svg" alt="smile image">
+                        <h4>24/7 customer service</h4>
+                        <p>We realize ideas from simple to complex, everything becomes easy to use and reach the most potential customers.</p>
+                    </div>
+                    <div class="services__card">
+                        <img src="./assets/gift__services.svg" alt="smile image">
+                        <h4>Free cancellation</h4>
+                        <p>We realize ideas from simple to complex, everything becomes easy to use and reach the most potential customers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="logos">
+            <div class="container">
+                <div class="logo-wrapper">
+                    <div class="logo-item"><img src="./assets/logo_rotashow.svg" alt="RotaShow"><p>RotaShow</p></div>
+                    <div class="logo-item"><img src="./assets/logo_waves.svg" alt="Waves"><p>waves</p></div>
+                    <div class="logo-item"><p>velocity</p><img src="./assets/logo_velocity.svg" alt="Velocity"></div>
+                    <div class="logo-item"><img src="./assets/logo_travelers.svg" alt="Travelers"><p>travelers.</p></div>
+                    <div class="logo-item"><img src="./assets/logo_goldlines.svg" alt="Goldlines"><p>goldlines</p></div>
+                    <div class="logo-item"><img src="./assets/logo_rotashow.svg" alt="RotaShow"><p>RotaShow</p></div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="faq">
+            <div class="container">
+                <div class="faq__wrapper">
+                    <div class="faq__info">
+                        <h2>Frequently asked questions</h2>
+                        <button>General</button>
+                        <button>Support</button>
+                        <button>Hosting</button>
+                        <button>Product</button>
+                    </div>
+                    <div class="container__faq">
+                        <div class="faq__asked">
+                            <details>
+                                <summary class="active">How does it work?</summary>
+                            </details>
+                            <details>
+                                <summary>How can i set up a new website?</summary>
+                            </details>
+                            <details>
+                                <summary>How does it work?</summary>
+                            </details>
+                            <details>
+                                <summary>How does it work?</summary>
+                            </details>
+                            <details>
+                                <summary>How does it work?</summary>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recommended">
+            <div class="container">
+                <div class="recommended__info">
+                    <h2>Recommended pickup locations</h2>
+                    <p>A lot of amazing experiences</p>
+                </div>
+
+                <div class="recommended__wrapper">
+                    <div class="recommended__card">
+                        <h3>128</h3>
+                        <img src="./assets/car.svg" alt="car image">
+                        <h4>South Virgilland</h4>
+                        <p>From Rs. 1,461 per day</p>
+                    </div>
+                    <div class="recommended__card">
+                        <h3>128</h3>
+                        <img src="./assets/car.svg" alt="car image">
+                        <h4>South Virgilland</h4>
+                        <p>From Rs. 1,461 per day</p>
+                    </div>
+                    <div class="recommended__card">
+                        <h3>128</h3>
+                        <img src="./assets/car.svg" alt="car image">
+                        <h4>South Virgilland</h4>
+                        <p>From Rs. 1,461 per day</p>
+                    </div>
+                    <div class="recommended__card">
+                        <h3>128</h3>
+                        <img src="./assets/car.svg" alt="car image">
+                        <h4>South Virgilland</h4>
+                        <p>From Rs. 1,461 per day</p>
+                    </div>
+                    <div class="recommended__card">
+                        <h3>128</h3>
+                        <img src="./assets/car.svg" alt="car image">
+                        <h4>South Virgilland</h4>
+                        <p>From Rs. 1,461 per day</p>
+                    </div>
+                    <div class="recommended__card">
+                        <h3>128</h3>
+                        <img src="./assets/car.svg" alt="car image">
+                        <h4>South Virgilland</h4>
+                        <p>From Rs. 1,461 per day</p>
+                    </div>
+                </div>
+                <div class="recommended__btns">
+                    <button class="recommended__btn"><img src="./assets/arrow_left.svg" alt="left arrow"></button>
+                    <button class="recommended__btn"><img src="./assets/arrow_right.svg" alt="right arrow"></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__image">
+                    <img src="./assets/footer__logo.svg" alt="logo image">
+                </div>
+                <div>
+                    <ul class="footer__list">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">What We Do</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer__input">
+                    <label for="">Join our community 🔥</label>
+                    <form action="">
+                        <input class="footer__write" type="text" placeholder="Enter your email">
+                        <button class="footer__btn" type="submit"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+                    </form>
+                </div>
+            </div>
+            <p class="footer__paragraph">Copyright © 2021 UI8 LLC. All rights reserved</p>
+        </div>
+    </footer>
 
     <script src="JS/app.js"></script>
 </body>
